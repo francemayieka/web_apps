@@ -35,19 +35,31 @@
     <!-- Exercise 4: Display Day of the Week -->
     <form id="formDayOfWeek">
         <h2>Display Day of the Week</h2>
-        <label for="dayNumber">Day Number (1-7):</label>
+        <label for="dayNumber">Day Number (0-7):</label>
         <input type="number" id="dayNumber" min="0" max="6" required>
         <button type="button" onclick="executeDayOfWeek()">Get Day</button>
         <div class="result" id="resultDayOfWeek"></div>
     </form>
 
-    <!-- Exercise 5: Sum of Numbers 1-10 -->
-    <form id="formSum">
-        <h2>Sum of Numbers 1-10</h2>
-        <button type="button" onclick="executeSum('for')">Sum using for</button>
-        <button type="button" onclick="executeSum('while')">Sum using while</button>
-        <button type="button" onclick="executeSum('doWhile')">Sum using do-while</button>
-        <div class="result" id="resultSum"></div>
+    <!-- Exercise 5: Sum of Numbers 1-10 using for Loop -->
+    <form id="formSumFor">
+        <h2>Sum of Numbers 1-10 using for Loop</h2>
+        <button type="button" onclick="executeSumFor()">Sum using for</button>
+        <div class="result" id="resultSumFor"></div>
+    </form>
+
+    <!-- Exercise 5: Sum of Numbers 1-10 using while Loop -->
+    <form id="formSumWhile">
+        <h2>Sum of Numbers 1-10 using while Loop</h2>
+        <button type="button" onclick="executeSumWhile()">Sum using while</button>
+        <div class="result" id="resultSumWhile"></div>
+    </form>
+
+    <!-- Exercise 5: Sum of Numbers 1-10 using do-while Loop -->
+    <form id="formSumDoWhile">
+        <h2>Sum of Numbers 1-10 using do-while Loop</h2>
+        <button type="button" onclick="executeSumDoWhile()">Sum using do-while</button>
+        <div class="result" id="resultSumDoWhile"></div>
     </form>
 </body>
 </html>

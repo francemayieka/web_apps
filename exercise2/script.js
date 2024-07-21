@@ -48,7 +48,7 @@ function executeDayOfWeek() {
     document.getElementById('resultDayOfWeek').innerText = "Day: " + result;
 }
 
-// Exercise 5: Sum of Numbers 1-10
+// Exercise 5: Sum of Numbers 1-10 using for Loop
 function sumUsingFor() {
     var sum = 0;
     for (var i = 1; i <= 10; i++) {
@@ -57,6 +57,12 @@ function sumUsingFor() {
     return sum;
 }
 
+function executeSumFor() {
+    var result = sumUsingFor();
+    document.getElementById('resultSumFor').innerText = "Sum (1-10): " + result;
+}
+
+// Exercise 5: Sum of Numbers 1-10 using while Loop
 function sumUsingWhile() {
     var sum = 0;
     var i = 1;
@@ -67,6 +73,12 @@ function sumUsingWhile() {
     return sum;
 }
 
+function executeSumWhile() {
+    var result = sumUsingWhile();
+    document.getElementById('resultSumWhile').innerText = "Sum (1-10): " + result;
+}
+
+// Exercise 5: Sum of Numbers 1-10 using do-while Loop
 function sumUsingDoWhile() {
     var sum = 0;
     var i = 1;
@@ -77,14 +89,7 @@ function sumUsingDoWhile() {
     return sum;
 }
 
-function executeSum(loopType) {
-    var result;
-    if (loopType === 'for') {
-        result = sumUsingFor();
-    } else if (loopType === 'while') {
-        result = sumUsingWhile();
-    } else if (loopType === 'doWhile') {
-        result = sumUsingDoWhile();
-    }
-    document.getElementById('resultSum').innerText = "Sum (1-10): " + result;
+function executeSumDoWhile() {
+    var result = sumUsingDoWhile();
+    document.getElementById('resultSumDoWhile').innerText = "Sum (1-10): " + result;
 }
