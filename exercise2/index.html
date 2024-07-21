@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>JavaScript Exercise</h1>
+
+    <!-- Exercise 2: Find the Largest of Two Numbers -->
+    <form id="formLargestOfTwo">
+        <h2>Find the Largest of Two Numbers</h2>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" required>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" required>
+        <button type="button" onclick="executeLargestOfTwo()">Find Largest</button>
+        <div class="result" id="resultLargestOfTwo"></div>
+    </form>
+
+    <!-- Exercise 3: Find the Largest of Three Numbers -->
+    <form id="formLargestOfThree">
+        <h2>Find the Largest of Three Numbers</h2>
+        <label for="numA">Number 1:</label>
+        <input type="number" id="numA" required>
+        <label for="numB">Number 2:</label>
+        <input type="number" id="numB" required>
+        <label for="numC">Number 3:</label>
+        <input type="number" id="numC" required>
+        <button type="button" onclick="executeLargestOfThree()">Find Largest</button>
+        <div class="result" id="resultLargestOfThree"></div>
+    </form>
+
+    <!-- Exercise 4: Display Day of the Week -->
+    <form id="formDayOfWeek">
+        <h2>Display Day of the Week</h2>
+        <label for="dayNumber">Day Number (1-7):</label>
+        <input type="number" id="dayNumber" min="0" max="6" required>
+        <button type="button" onclick="executeDayOfWeek()">Get Day</button>
+        <div class="result" id="resultDayOfWeek"></div>
+    </form>
+
+    <!-- Exercise 5: Sum of Numbers 1-10 -->
+    <form id="formSum">
+        <h2>Sum of Numbers 1-10</h2>
+        <button type="button" onclick="executeSum('for')">Sum using for</button>
+        <button type="button" onclick="executeSum('while')">Sum using while</button>
+        <button type="button" onclick="executeSum('doWhile')">Sum using do-while</button>
+        <div class="result" id="resultSum"></div>
+    </form>
+</body>
+</html>
